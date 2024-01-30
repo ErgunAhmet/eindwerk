@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IInfrasctructure\IInfrasctructure.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\IRepository\IRepository.csproj" />
   </ItemGroup>
 
