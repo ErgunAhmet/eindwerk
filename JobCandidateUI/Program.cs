@@ -25,7 +25,6 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAdB2C"));
-        
 
 builder.Services.AddAuthorization(options =>
 {
@@ -84,13 +83,7 @@ app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseRewriter(new RewriteOptions().Add(
-    context =>
-    {
-        if (context.HttpContext.Request.Path ==
-                "/counter")
-            context.HttpContext.Response.Redirect("/");
-    }));
+
 
 app.UseAntiforgery();
 

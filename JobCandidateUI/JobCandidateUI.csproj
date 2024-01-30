@@ -32,6 +32,7 @@
 
   <ItemGroup>
     <Folder Include="Navigation\" />
+    <Folder Include="Pages\" />
     <Folder Include="Shared\" />
     <Folder Include="Properties\ServiceDependencies\IndexedJobsDev - Web Deploy\" />
   </ItemGroup>
